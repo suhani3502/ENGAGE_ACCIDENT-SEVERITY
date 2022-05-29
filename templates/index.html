@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      
+      <title>Severiry prediction</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='/css/responsive.css')}}">
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='/css/jquery.mCustomScrollbar.min.css')}}">
+      
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='/css/owl.carousel.min.css')}}">
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='/css/owl.theme.default.min.css')}}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   
+   <body>
+      
+      <div class="header_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="contact_main">
+                <div class="contact_left">
+                  <div class="call_text"><a href="#"><span class="call_text_left"></span></a></div>
+                </div>
+                <div class="contact_right">
+                  <div class="call_text"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="logo"><a href="/"></a></div>
+            </div>
+            <div class="col-sm-5">
+              <div class="contact_main">
+                <div class="contact_left">
+                  <div class="call_text"><a href="#"><span class="call_text_left"></span></a></div>
+                </div>
+                <div class="contact_right">
+                  <div class="call_text"><a href="#"><span class="call_text_left"></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      
+      <div class="banner_section">
+        <section class="slide-wrapper">
+          <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  
+                  <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol>
+
+                  
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <!-- <div class="image_1"><img src="images/img-1.png"></div> -->
+                                <div class="image_1"><img src="{{url_for('static', filename='/images/img-1.png')}}"></div>
+                              </div>
+                              <div class="col-md-6">
+                                <h1 class="achive_text">Car accident severity prediction</h1>
+                                
+                                <p class="lorem_text">Predicting traffic accident severity is essential for traffic accident prevention and vulnerable road user safety. Furthermore, the explainability of the prediction is crucial for practitioners to extract relevant risk factors and implement corresponding countermeasures.</p>
+                                
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <!-- <div class="image_1"><img src="images/img-1.png"></div> -->
+                                <div class="image_1"><img src="{{url_for('static', filename='/images/img-1.png')}}"></div>
+                              
+                              
+                    
+                      <div class="carousel-item">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="image_1"><img src="{{url_for('static', filename='/images/img-1.png')}}"></div>
+                              </div>
+                              <div class="col-md-6">
+                                
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="image_1"><img src="{{url_for('static', filename='/images/img-1.png')}}"></div>
+                              </div>
+                              
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+      </div>
+      
+      <div class="about_section layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              
+              <h1 class="years_text">SOURCES OF DATASET</h1>
+              <h3 class="unique_text">MapQuest and Bing</h3>
+              <p class="ipsum_text">These data came from two sources, MapQuest and Bing, both of which report severity level but in a different way. Bing has 4 levels while MapQuest has 5. And according to dataset creator, there is no way to do a 1:1 mapping between them.
+              <br>I decided to select MapQuest because serious accidents are we really care about and the sparse data of such accidents is the reality we have to confront.
+              </p>
+              
+            </div>
+            <div class="col-md-6">
+              <div class="image_2"><img src="{{url_for('static', filename='/images/img-2.png')}}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="service_section layout_padding">
+        <div class="container">
+          <h1 class="services_text">Models used for prediction</h1>
+          <p class="dolor_text">The models used along with their f-score and accuracy are given here-</p>
+          <div class="service_section_2">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="image_3"><img src="{{url_for('static', filename='/images/img-3.png')}}"></div>
+                <h1 class="classic_text">RANDOM FOREST CLASSIFICATION</h1>
+                <p class="consectetur_text">"Random Forest is a classifier that contains a number of decision trees on various subsets of the given dataset and takes the average to improve the predictive accuracy of that dataset." Instead of relying on one decision tree, the random forest takes the prediction from each tree</p>
+                <div class="read_bt_main">
+                  
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="image_3"><img src="{{url_for('static', filename='/images/img-4.png')}}"></div>
+                <h1 class="classic_text">EASY ENSEMBLE CLASSIFICATION</h1>
+                <p class="consectetur_text">The Easy Ensemble involves creating balanced samples of the training dataset by selecting all examples from the minority class and a subset from the majority class. Rather than using pruned decision trees, boosted decision trees are used on each subset, specifically the AdaBoost algorithm.</p>
+                <div class="read_bt_main">
+                  
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="image_3"><img src="{{url_for('static', filename='/images/img-5.png')}}"></div>
+                <h1 class="classic_text">BALANCE CASCADES CLASSIFICATION</h1>
+                <p class="consectetur_text">Balance cascades occur when a balance surpasses its maximum or drops below its minimum. When a balance surpasses its maximum, units are transferred to the "cascade to" balance. When a balance drops below its minimum, units are transferred from the "cascade to" balance.</p>
+                <div class="read_bt_main">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="client_section layout_padding">
+        <h1 class="client_taital">IMPORTANT FEATURES</h1>
+        <div class="container">
+          <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="alex_bg">
+                      <h3 class="alex_text">Spatial Patterns</h3>
+                      <p class="reader_text">Spatial patterns are also very important. For small areas like street and zipcode, severe accidents are more likely to happen at places having more accidents while for larger areas like city and airport region, at places having less accident.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="alex_bg">
+                      <h3 class="alex_text">Pressure</h3>
+                      <p class="reader_text">Pressure is top fourth important feature in the random-forest model and there is negative correlation between pressure and severity.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="alex_bg">
+                      <h3 class="alex_text">Interstate Highway</h3>
+                      <p class="reader_text">If an accident happens on Interstate Highway, there is a 2% chance that it will be a serious one, which is about 2.3 times of average and higher than any other street type.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="alex_bg">
+                      <h3 class="alex_text">Traffic signal/Junction</h3>
+                      <p class="reader_text">An accident is much less likely to be severe if it happens near traffic signal while more likely if near junction.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+              <i class="fa fa-long-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+              <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image_6"><img src="{{url_for('static', filename='/images/img-6.png')}}"></div>
+  
+      </div>
+      </div>
+    </div>
+      
+      <div class="join_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="member_text"></h1>
+            </div>
+            <div class="col-md-6">
+              <div class="join_bt"><a href="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center>
+
+        <form action="{{url_for('result')}}" method="POST">
+          <input type="number" placeholder="Astronomical_Twilight_Night" id="Astronomical_Twilight_Night" name="Astronomical_Twilight_Night"><br>
+          <input type="number" placeholder="Side_R" id="Side_R" name="Side_R"><br>
+          <input type="number" placeholder="Timezone_US/Eastern" id="Timezone_US/Eastern" name="Timezone_US/Eastern"><br>
+          <input type="number" placeholder="Timezone_US/Mountain" id="Timezone_US/Mountain" name="Timezone_US/Mountain"><br>
+          <input type="number" placeholder="Timezone_US/Pacific" id="Timezone_US/Pacific" name="Timezone_US/Pacific"><br>
+          <input type="number" placeholder="Station" id="Station" name="Station"><br>
+          <input type="number" placeholder="Stop" id="Stop" name="Stop"><br>
+          <input type="number" placeholder="Traffic_Signal" id="Traffic_Signal" name="Traffic_Signal"><br>
+          <input type="number" placeholder="Rain" name="Rain"><br>
+          <input type="number" placeholder="Hwy" id="Hwy" name="Hwy"><br>
+          <input type="number" placeholder="Minute_Freq" id="Minute_Freq" name="Minute_Freq"><br>
+          <input type="number" placeholder="Population_County_log" id="Population_County_log" name="Population_County_log"><br>
+          <input type="number" placeholder="Street_Freq" id="Street_Freq" name="Street_Freq"><br>
+          <input type="number" placeholder="State_Freq" id="State_Freq" name="State_Freq"><br>
+          <input type="number" placeholder="Pressure_bc" id="Pressure_bc" name="Pressure_bc"><br>
+          <button type = "submit" value = "Predict">Predict</button>
+        </form>
+        
+      </center>
+
+   <!-- <script src="js/jquery.min.js"></script> -->
+   <script src="{{url_for('static', filename='/js/jquery.min.js')}}"></script>
+   <!-- <script src="js/popper.min.js"></script> -->
+   <script src="{{url_for('static', filename='/js/popper.min.js')}}"></script>
+   <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+   <script src="{{url_for('static', filename='/js/bootstrap.bundle.min.js')}}"></script>
+   <!-- <script src="js/jquery-3.0.0.min.js"></script> -->
+   <script src="{{url_for('static', filename='/js/jquery.min.js')}}"></script>
+   <!-- <script src="js/plugin.js"></script> -->
+   <script src="{{url_for('static', filename='/js/plugin.js')}}"></script>
+   <!-- sidebar -->
+   <!-- <script src="js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+   <script src="{{url_for('static', filename='/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+   <!-- <script src="js/custom.js"></script> -->
+   <script src="{{url_for('static', filename='/js/custom.js')}}"></script>
+   <!-- javascript --> 
+   <!-- <script src="js/owl.carousel.js"></script> -->
+   <script src="{{url_for('static', filename='/js/owl.carousel.js')}}"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script>
+     $('#myCarousel').carousel({
+            interval: false
+        });
+
+        
+
+        $("#myCarousel").on("touchstart", function(event){
+
+            var yClick = event.originalEvent.touches[0].pageY;
+            $(this).one("touchmove", function(event){
+
+                var yMove = event.originalEvent.touches[0].pageY;
+                if( Math.floor(yClick - yMove) > 1 ){
+                    $(".carousel").carousel('next');
+                }
+                else if( Math.floor(yClick - yMove) < -1 ){
+                    $(".carousel").carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+        });
+   </script>
+   </body>
+   </html>
